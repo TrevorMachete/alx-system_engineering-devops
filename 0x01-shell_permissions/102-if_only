@@ -1,2 +1,2 @@
 #!/bin/bash
-if [ "$owner" = "guillaume" ]; then chown betty hello
+if [ "$current_owner" = "guillaume" ] then chown betty hello fi
