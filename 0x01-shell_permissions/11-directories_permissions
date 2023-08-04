@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -Rv u+x,g+x,o+x .
+chmod -Rv 644 chmod -Rv u+x,g+x,o+x
