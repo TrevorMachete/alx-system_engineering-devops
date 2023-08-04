@@ -1,0 +1,2 @@
+#!/bin/bash
+if [ -x "$(command -v telnet)" ]; then telnet towel.blinkenlights.nl
