@@ -1,0 +1,3 @@
+#!/bin/bash
+read input # Use tr command to replace A with Z and c with e output=$(echo "$input" | tr "Ac" "Ze") 
+# Print the output string echo "$output"

@@ -1,0 +1,2 @@
+#!/bin/bash
+output=$(cut -d ":" -f 1,6 /etc/passwd) output=$(echo "$output" | sort -t ":" -k 1) echo "$output"

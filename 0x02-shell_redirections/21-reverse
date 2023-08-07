@@ -1,0 +1,2 @@
+#!/bin/bash
+read input # Use rev command to reverse the input string output=$(echo "$input" | rev) # Print the output string echo "$output"

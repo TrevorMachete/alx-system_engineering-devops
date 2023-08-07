@@ -1,0 +1,2 @@
+#!/bin/bash
+input = """Loyal and faithful Only you in my heart Very happy together Everlasting bond""" output = "" for line in input.split("\n"): output += line[0] print(output)

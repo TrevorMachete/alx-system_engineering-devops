@@ -1,0 +1,9 @@
+#!/bin/bash
+read -a words # read an array of words from the input
+sorted=($(printf "%s\n" "${words[@]}" | sort)) # sort the words in a new array
+uniq=($(printf "%s\n" "${sorted[@]}" | uniq -c)) # count the occurrences of each word in a new array
+for i in "${!uniq[@]}"; do # loop through the indices of the uniq array
+    if [[ ${uniq[i]} == 1* ]]; then # check if the word has a count of one
+        echo ${uniq[i+1]} # print the word
+    fi
+done
