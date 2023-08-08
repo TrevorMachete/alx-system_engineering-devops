@@ -1,2 +1,2 @@
 #!/bin/bash
-output=$(find . -name "*.gif") output=$(echo "$output" | xargs file | grep "regular file" | cut -d ":" -f 1) output=$(echo "$output" | sed "s/.gif$//") output=$(echo "$output" | sort -f) echo "$output"
+find -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d '.' -f 2- | rev | LC_ALL=C sort -f
