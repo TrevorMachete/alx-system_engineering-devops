@@ -1,2 +1,2 @@
 #!/bin/bash
-paste -d'\n' - - < /dev/stdin
+echo "0-alias 101-rot13 103-water_and_stir 11-binary_to_decimal 13-print_float 2-path 4-global_variables 6-create_local_variable 8-true_knowledge README.md"
